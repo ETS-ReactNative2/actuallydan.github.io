@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 
 export default function Terminal({ messages = [] }) {
   const [input, setInput] = useState("");
@@ -13,36 +13,39 @@ export default function Terminal({ messages = [] }) {
     setInput("");
   }
 
-  function displayLine(messageIndex = 0) {
-    // if there are no more messages to print return
-    if (messageIndex === messages.length) {
-      return;
-    }
-
-    let cursor = 0;
-    const message = messages[messageIndex];
-
-    if (message.trim().length === "") {
-      submit(message);
-    }
-
-    // print one character per 50ms to look like typing
-    const interval = setInterval(() => {
-      // if we're at the end of the message, stop the interval and press enter
-      if (cursor === message.length) {
-        clearInterval(interval);
-        submit(message);
-        setTimeout(() => {
-          displayLine(messageIndex + 1);
-        }, 1000);
+  const displayLine = useCallback(
+    (messageIndex = 0) => {
+      // if there are no more messages to print return
+      if (messageIndex === messages.length) {
         return;
       }
 
-      // update input as if we were typing in the input
-      setInput((i) => i + message[cursor]);
-      cursor += 1;
-    }, 40);
-  }
+      let cursor = 0;
+      const message = messages[messageIndex];
+
+      if (message.trim().length === "") {
+        submit(message);
+      }
+
+      // print one character per 50ms to look like typing
+      const interval = setInterval(() => {
+        // if we're at the end of the message, stop the interval and press enter
+        if (cursor === message.length) {
+          clearInterval(interval);
+          submit(message);
+          setTimeout(() => {
+            displayLine(messageIndex + 1);
+          }, 1000);
+          return;
+        }
+
+        // update input as if we were typing in the input
+        setInput((i) => i + message[cursor]);
+        cursor += 1;
+      }, 40);
+    },
+    [messages]
+  );
 
   const flexRow = "flex flex-row align-center";
 

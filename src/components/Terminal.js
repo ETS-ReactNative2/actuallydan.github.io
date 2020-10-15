@@ -89,33 +89,24 @@ export default function Terminal({ messages = [] }) {
       </span>
     );
   }
-
   return (
-    <div className="app-chrome">
-      <div className={`${flexRow} app-bar`}>
-        <div className="traffic-light red" />
-        <div className="traffic-light yellow" />
-        <div className="traffic-light green" />
-      </div>
-
-      <div className="app-body" ref={scrollRef}>
-        {lines &&
-          lines.map((l) => (
-            <div key={l} className={`${flexRow} mb2`}>
-              <div className="app-text b theme-blue mr2">{base}</div>
-              <div className="app-text">{parseLink(l)}</div>
-            </div>
-          ))}
-        <div className={flexRow}>
-          <div className="app-text b theme-blue mr2">{base}</div>
-          <textarea
-            className="app-text input"
-            onKeyDown={handleKeyPress}
-            onChange={handleEntry}
-            value={parseLink(input)}
-            ref={inputRef}
-          />
-        </div>
+    <div className="app-body" ref={scrollRef}>
+      {lines &&
+        lines.map((l, i) => (
+          <div key={l + i} className={`${flexRow} mb2`}>
+            <div className="app-text b theme-blue mr2">{base}</div>
+            <div className="app-text">{parseLink(l)}</div>
+          </div>
+        ))}
+      <div className={flexRow}>
+        <div className="app-text b theme-blue mr2">{base}</div>
+        <textarea
+          className="app-text input"
+          onKeyDown={handleKeyPress}
+          onChange={handleEntry}
+          value={parseLink(input)}
+          ref={inputRef}
+        />
       </div>
     </div>
   );

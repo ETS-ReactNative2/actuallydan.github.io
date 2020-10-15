@@ -1,5 +1,7 @@
 import React from "react";
+import Window from "./components/Window";
 import Terminal from "./components/Terminal";
+import Slider from "react-slick";
 
 function App() {
   const welcomeMessages = [
@@ -23,9 +25,47 @@ function App() {
     "😄 Pronouns: he/him/his",
   ];
 
+  // const projects = [
+  //   {
+  //     name: "athar.es",
+  //     href: "https://athar.es",
+  //     img: "./images/athares-1-85.png",
+  //   },
+  //   {
+  //     name: "tadu.herokuapp.com",
+  //     href: "https://tadu.herokuapp.com",
+  //     img: "./images/tadu-2-85.png",
+  //   },
+  //   {
+  //     name: "bradysgolfcarts.com",
+  //     href: "https://bradysgolfcarts.com",
+  //     img: "./images/brady-carts-85.png",
+  //   },
+  // ];
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   lazyLoad: "progressive",
+  //   className: "w-90 mt4 pa4",
+  // };
+
   return (
     <div className="App">
-      <Terminal messages={welcomeMessages} />
+      <Window title={"hello.txt"}>
+        <Terminal messages={welcomeMessages} />
+      </Window>
+
+      {/* <div className="w-100 mt4 flex items-center justify-center">
+        <Slider {...settings}>
+          {projects.map((p) => (
+            <Window key={p.name} title={p.name}>
+              <img src={p.img} />
+            </Window>
+          ))}
+        </Slider>
+      </div> */}
     </div>
   );
 }

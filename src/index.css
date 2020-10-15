@@ -1,13 +1,92 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(0deg, #00a3ee, #00dffc80);
+  height: 100vh;
+  width: 100vw;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  padding: 2em;
+  height: 100vh;
+}
+.app-chrome {
+  border-radius: 17px;
+  background: linear-gradient(45deg, #222, #333);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.app-bar {
+  padding: clamp(0em, 1vw, 5em);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.traffic-light {
+  height: 0.75em;
+  width: 0.75em;
+  border-radius: 100%;
+  border: none;
+  margin-left: 0.5em;
+}
+
+.traffic-light.red {
+  background-color: #ff6159;
+}
+
+.traffic-light.yellow {
+  background-color: #ffbd2e;
+}
+
+.traffic-light.green {
+  background-color: #28c941;
+}
+
+.app-body {
+  padding: 0.75em;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+  /* flex: 1 1 30vh; */
+  height: 40vh;
+  overflow: scroll;
+}
+
+.app-text {
+  color: #fff;
+  font-size: clamp(11px, 2vw, 15px);
+  font-family: monospace;
+}
+
+.app-text.input {
+  background: transparent;
+  border: none;
+  padding: 0;
+  flex: 1;
+  outline: none;
+  resize: none;
+  height: 1rem;
+}
+
+a.app-text.input {
+  font-size: 1em;
+  padding: 0;
+}
+
+.app-text.input:focus {
+  background-color: #ffffff20;
+}
+
+.theme-blue {
+  color: #00dffc;
 }

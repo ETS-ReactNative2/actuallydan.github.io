@@ -9,7 +9,7 @@ I'm also on the hunt for a new full-time career move, so feel free to checkout [
 - 🔭 I’m currently building [athar.es](https://github.com/atharesinc/athares)
 - 💬 Ask me about React, GraphQL, economics, and completely hypothetical governments
 - 👯 I’m looking to collaborate on: your next project?
-- 📫 How to reach me: How to reach me: dankral01@gmail.com
+- 📫 How to reach me: dankral01@gmail.com
 - 😄 Pronouns: he/him/his
 
 <!-- - 🌱 I’m currently learning Python? -->

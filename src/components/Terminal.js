@@ -60,7 +60,7 @@ export default function Terminal({ messages = [] }) {
   useEffect(() => {
     // kick off entering text
     displayLine(0);
-  }, []);
+  }, [displayLine]);
 
   // scroll to bottom on add line
   useEffect(() => {

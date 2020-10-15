@@ -1,16 +1,17 @@
 ### Hi there 👋
 
-<!--
-**actuallydan/actuallydan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm Dan, a self taught Fullstack Web Developer (that also dabbles in React Native!) who cares too much about cross-platform applications and building a decentralized future, but for now I'm just obsessed with Javascript.
 
-Here are some ideas to get you started:
+I've built software for a parking company, a gas station chain, a pharmaceutical technology company, my university, private individuals and now I'm teaching others in my free-time at [Trilogy Education Services](https://www.trilogyed.com/).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I'm also on the hunt for a new full-time career move, so feel free to checkout [my portfolio](https://actuallydan.github.io) or send me an email at dankral01@gmail.com if you're looking for someone with experince in React, Node, GraphQL and serverless!
+
+- 🔭 I’m currently building [athar.es](https://github.com/atharesinc/athares)
+- 💬 Ask me about React, GraphQL, economics, and completely hypothetical governments
+- 👯 I’m looking to collaborate on: your next project?
+- 📫 How to reach me: How to reach me: dankral01@gmail.com
+- 😄 Pronouns: he/him/his
+
+<!-- - 🌱 I’m currently learning Python? -->
+<!-- - 🤔 I’m looking for help with ... -->
+<!-- - ⚡ Fun fact: ... -->

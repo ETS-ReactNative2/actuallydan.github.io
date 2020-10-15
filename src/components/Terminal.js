@@ -7,6 +7,7 @@ export default function Terminal({ messages = [] }) {
   const base = " $";
 
   const scrollRef = useRef();
+  const inputRef = useRef();
 
   function submit(message) {
     setLines((l) => [...l, message]);
@@ -17,6 +18,7 @@ export default function Terminal({ messages = [] }) {
     (messageIndex = 0) => {
       // if there are no more messages to print return
       if (messageIndex === messages.length) {
+        inputRef.current.focus();
         return;
       }
 
@@ -111,6 +113,7 @@ export default function Terminal({ messages = [] }) {
             onKeyDown={handleKeyPress}
             onChange={handleEntry}
             value={parseLink(input)}
+            ref={inputRef}
           />
         </div>
       </div>

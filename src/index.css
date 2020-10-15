@@ -16,7 +16,7 @@ code {
 
 .App {
   padding: 2em;
-  padding-bottom: 4em;
+  height: 100vh;
 }
 .app-chrome {
   border-radius: 17px;

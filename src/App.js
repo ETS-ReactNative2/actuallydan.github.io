@@ -1,7 +1,7 @@
 import React from "react";
 import Window from "./components/Window";
 import Terminal from "./components/Terminal";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 function App() {
   const welcomeMessages = [

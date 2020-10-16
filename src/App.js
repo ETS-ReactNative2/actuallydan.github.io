@@ -29,17 +29,17 @@ function App() {
   //   {
   //     name: "athar.es",
   //     href: "https://athar.es",
-  //     img: "./images/athares-1-85.png",
+  //     img: "./images/athares-1.png",
   //   },
   //   {
   //     name: "tadu.herokuapp.com",
   //     href: "https://tadu.herokuapp.com",
-  //     img: "./images/tadu-2-85.png",
+  //     img: "./images/tadu-2.png",
   //   },
   //   {
   //     name: "bradysgolfcarts.com",
   //     href: "https://bradysgolfcarts.com",
-  //     img: "./images/brady-carts-85.png",
+  //     img: "./images/brady-carts.png",
   //   },
   // ];
   // const settings = {

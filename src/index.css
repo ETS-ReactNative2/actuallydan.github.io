@@ -27,7 +27,7 @@ code {
   box-shadow: -10px 10px 1em #00000099;
 }
 .app-bar {
-  padding: clamp(0em, 1vw, 5em);
+  padding: clamp(0.01em, 1vw, 5em);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
@@ -81,6 +81,7 @@ code {
 a.app-text.input {
   font-size: 1em;
   padding: 0;
+  color: #0090ff;
 }
 
 .app-text.input:focus {

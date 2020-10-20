@@ -25,7 +25,9 @@ code {
   flex-direction: column;
   align-items: stretch;
   box-shadow: -10px 10px 1em #00000099;
+  overflow: hidden;
 }
+
 .app-bar {
   padding: clamp(0.01em, 1vw, 5em);
   border-top-right-radius: 5px;
@@ -95,4 +97,13 @@ a.app-text.input {
 .projects-container {
   overflow-x: scroll;
   width: 100vw;
+}
+
+.vb-hidden {
+  visibility: hidden;
+}
+
+.window-title {
+  font-size: clamp(13px, 2vw, 15px);
+  font-family: monospace;
 }

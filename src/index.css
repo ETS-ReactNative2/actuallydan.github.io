@@ -17,7 +17,7 @@ code {
 .App {
   padding: 2em;
   padding-top: 4rem;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .app-chrome {
   border-radius: 17px;
@@ -27,6 +27,29 @@ code {
   align-items: stretch;
   box-shadow: -10px 10px 1em #00000099;
   overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+.fullscreen {
+  position: fixed;
+  z-index: 2;
+  top: 4em;
+  width: clamp(320px, 80%, 1920);
+  margin: auto;
+  left: 2em;
+  right: 2em;
+}
+.fullscreen::before {
+  content: " ";
+  background-color: #000a;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .app-bar {
@@ -53,6 +76,7 @@ code {
 
 .traffic-light.green {
   background-color: #28c941;
+  cursor: pointer;
 }
 
 .app-body {
@@ -107,4 +131,16 @@ a.app-text.input {
 .window-title {
   font-size: clamp(13px, 2vw, 15px);
   font-family: monospace;
+}
+
+.link-wrap {
+  cursor: pointer;
+}
+
+.app-chrome:hover {
+  transform: scale(1.05);
+}
+
+.app-chrome.no-hover:hover {
+  transform: none;
 }

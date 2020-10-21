@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { GitHub, Linkedin, Terminal } from "react-feather";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [top, setTop] = useState(0);
 
-  const handleUpdate = () => {
+  const handleUpdate = useCallback(() => {
     // console.log({ e, top });
     const { scrollY } = window;
     if (top !== scrollY) {
       setScrolled(scrollY > 30);
       setTop(scrollY);
     }
-  };
+  }, [top]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleUpdate);
@@ -20,7 +20,7 @@ export default function Nav() {
     return () => {
       window.removeEventListener("scroll", handleUpdate);
     };
-  }, []);
+  }, [handleUpdate]);
 
   const textColorClass = scrolled ? "white" : "dark-gray";
 

@@ -48,7 +48,7 @@ function App() {
   return (
     <>
       <Nav />
-      <div className="App pt5">
+      <div className="App">
         <Window title={"hello.txt"} center>
           <Terminal messages={welcomeMessages} />
         </Window>

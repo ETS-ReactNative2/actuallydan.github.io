@@ -63,6 +63,15 @@ function App() {
       description:
         "Led by Millersville University's Dr. Chris Hardy, I helped migrate Nature Atlas to AWS and integrate image upload to their bio-statistic research app, as well as integrate a live-poll tracker for observations made in the field.",
     },
+    {
+      name: "transient-composer",
+      href: "https://actuallydan.github.io/transient/",
+      repo: "https://actuallydan.github.io/transient/",
+      img: "./images/transient-1.png",
+      fullName: "Transient Composer",
+      description:
+        "An experiment with Pizzicato.js and procedurally generated audio, transient-composer uses 4-part voice writing to endlessly play in 4/4 C Major.",
+    },
   ];
 
   return (

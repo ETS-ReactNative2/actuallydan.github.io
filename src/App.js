@@ -31,7 +31,7 @@ function App() {
   const projects = [
     {
       name: "athar.es",
-      href: "https://athar.es",
+      href: "https://www.athar.es",
       img: "./images/athares-1.png",
       repo: "https://github.com/atharesinc/athares",
       fullName: "Athares",

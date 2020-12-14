@@ -39,8 +39,7 @@ function App() {
         "Athares is a Distributed Democracy Platform where users can form groups with Chat and Governance without a group admin.",
     },
     {
-      name: "tadu.herokuapp.com",
-      href: "https://tadu.herokuapp.com",
+      name: "tadu",
       img: "./images/tadu-2.png",
       fullName: "Tadu",
       repo: "https://github.com/actuallydan/tadu",
@@ -92,6 +91,18 @@ function App() {
                       <img src={p.img} alt={"screenshot of " + p.name} />
                     </Window>
                   </a>
+
+                  {p.href ? (
+                    <a href={p.href} className="ph2 ph0-ns pb3 link db">
+                      <Window key={p.name} title={p.name}>
+                        <img src={p.img} alt={"screenshot of " + p.name} />
+                      </Window>
+                    </a>
+                  ) : (
+                    <Window key={p.name} title={p.name}>
+                      <img src={p.img} alt={"screenshot of " + p.name} />
+                    </Window>
+                  )}
                   <div className="flex items-center">
                     {p.repo && (
                       <a

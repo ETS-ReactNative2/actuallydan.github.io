@@ -71,6 +71,15 @@ function App() {
       description:
         "An experiment with Pizzicato.js and procedurally generated audio, transient-composer uses 4-part voice writing to endlessly play in 4/4 C Major.",
     },
+    {
+      name: "docusear.ch",
+      href: "https://docusear.ch/",
+      repo: "https://github.com/actuallydan/docusearch",
+      img: "./images/docusearch.png",
+      fullName: "Docusearch",
+      description:
+        "A web app for organizing, analyzing, and deep searching images and documents.",
+    },
   ];
 
   return (
@@ -86,12 +95,6 @@ function App() {
             {projects.map((p) => (
               <div key={p.name} className=" w-100 w-50-ns pa2-ns">
                 <div className="pv2">
-                  <a href={p.href} className="ph2 ph0-ns pb3 link db">
-                    <Window key={p.name} title={p.name}>
-                      <img src={p.img} alt={"screenshot of " + p.name} />
-                    </Window>
-                  </a>
-
                   {p.href ? (
                     <a href={p.href} className="ph2 ph0-ns pb3 link db">
                       <Window key={p.name} title={p.name}>

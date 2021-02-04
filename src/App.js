@@ -94,7 +94,7 @@ function App() {
     <>
       <Nav />
       <div className="App">
-        <Window title={"hello.txt"} center noHover>
+        <Window title={"hello.zsh"} center noHover>
           <Terminal messages={welcomeMessages} />
         </Window>
 

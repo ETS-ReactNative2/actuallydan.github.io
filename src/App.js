@@ -80,6 +80,14 @@ function App() {
       description:
         "A web app for organizing, analyzing, and deep searching images and documents.",
     },
+    {
+      name: "timezone-converter",
+      href: "https://actuallydan.github.io/timezone-converter/",
+      repo: "https://github.com/actuallydan/timezone-converter",
+      img: "./images/timezone-converter.png",
+      fullName: "Timezone Converter",
+      description: "Convert workday hours into other timezones and vice-versa.",
+    },
   ];
 
   return (

@@ -42,6 +42,7 @@ function App() {
       name: "tadu",
       img: "./images/tadu-2.png",
       fullName: "Tadu",
+      href: "https://tadu.meteorapp.com/",
       repo: "https://github.com/actuallydan/tadu",
       description:
         "Tadu is a task organizer that uses Machine Learning to help you schedule tasks when you're likely to complete them.",

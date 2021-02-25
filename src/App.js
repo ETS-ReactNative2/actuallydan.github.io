@@ -39,6 +39,13 @@ function App() {
         "Athares is a Distributed Democracy Platform where users can form groups with Chat and Governance without a group admin.",
     },
     {
+      name: "noise-chat",
+      img: "./images/noise-chat.jpg",
+      fullName: "Noise Chat",
+      repo: "https://github.com/actuallydan/noise-chat",
+      description: `A YikYak clone if, instead of being hyperlocal Reddit, it was just a hyperlocal chatroom. Anonymously chat with people nearby. Built with Firebase and React Native (Expo). Coming to an App|Play Store near you!`,
+    },
+    {
       name: "tadu",
       img: "./images/tadu-2.png",
       fullName: "Tadu",
